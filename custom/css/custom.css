@@ -71,4 +71,9 @@ body {
   text-decoration: none;
   filter: alpha(opacity=1);
   outline: 0;
+}
 
+#middler img
+{
+width:100%;
+}
