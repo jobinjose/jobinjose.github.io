@@ -56,4 +56,25 @@ $("#contact").click(function() {
       });
 
 
+      $(".demo").sectionsnap({
+        // time dilay (ms)
+        'delay': 50, 
+         
+        // selector
+        'selector': ".snapper", 
+         
+        // % of window height from which we start
+        'reference': .9, 
+         
+        // animation time (snap scrolling)
+        'animationTime': 400, 
+         
+        // offset top (no snap before scroll reaches this position)
+        'offsetTop': 100,
+         
+        // offset bottom (no snap after bottom - offsetBottom)
+        'offsetBottom': 200 
+      });
+
+
     });
