@@ -3,31 +3,38 @@ function scrollToAnchor(aid){
     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
 }
 
-$("#top").click(function() {
+$("#top").click(function(e) {
+   e.preventDefault();
    scrollToAnchor('start');
 });
 
-$("#portfolio").click(function() {
+$("#portfolio").click(function(e) {
+  e.preventDefault();
    scrollToAnchor('port');
 });
 
-$("#summary").click(function() {
+$("#summary").click(function(e) {
+  e.preventDefault();
    scrollToAnchor('summary');
 });
 
-$("#skills").click(function() {
+$("#skills").click(function(e) {
+  e.preventDefault();
    scrollToAnchor('skill');
 });
 
-$("#home").click(function() {
+$("#home").click(function(e) {
+  e.preventDefault();
    scrollToAnchor('start');
 });
 
-$("#employers").click(function() {
+$("#employers").click(function(e) {
+  e.preventDefault();
    scrollToAnchor('employ');
 });
 
-$("#contact").click(function() {
+$("#contact").click(function(e) {
+  e.preventDefault();
    scrollToAnchor('cont');
 });
 
@@ -58,7 +65,7 @@ $("#contact").click(function() {
 
       $(".demo").sectionsnap({
         // time dilay (ms)
-        'delay': 50, 
+        'delay': 0, 
          
         // selector
         'selector': ".snapper", 
@@ -67,7 +74,7 @@ $("#contact").click(function() {
         'reference': .9, 
          
         // animation time (snap scrolling)
-        'animationTime': 400, 
+        'animationTime': 800, 
          
         // offset top (no snap before scroll reaches this position)
         'offsetTop': 100,
