@@ -11,14 +11,14 @@ height: 100%;
 #car2 img
 {
 height: 100%;
-
-
 }
 
 #car3 img
 {
 height: 100%;
+}
 
+.navbar-toggle{
 
 }
 
@@ -76,6 +76,11 @@ body {
   text-decoration: none;
   filter: alpha(opacity=1);
   outline: 0;
+}
+#myCarousel
+{
+  margin-left:-15px;
+  margin-right:-15px;
 }
 
 #middler img
